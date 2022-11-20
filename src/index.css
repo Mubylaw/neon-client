@@ -1,0 +1,1003 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: context-menu;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  color-scheme: light !important;
+}
+
+.auth-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.auth-container .image {
+  width: 55%;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+}
+
+.auth-container .image img{
+  width: 100%;
+}
+
+.auth-container .auth {
+  position: relative;
+  width: 45%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 55%;
+}
+
+.auth-container .auth .header img {
+  width: 110px;
+}
+
+.auth-container .auth .title {
+  font-size: 26px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  margin: 25px 0 35px;
+}
+
+.auth-container .auth form {
+  width: 400px;
+}
+
+.auth-container .auth .btn {
+  width: 400px;
+  margin: 20px 0 10px;
+  background: #134867;
+  color: white;
+  padding: 13px 0;
+}
+
+.auth-container .auth .footnotes {
+  text-align: center;
+}
+
+.dash-hero .onboard .header {
+  display: flex;
+  background: #134867;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.dash-hero .onboard .header .logo{
+  height: 65px;
+  display: flex;
+    align-items: center;
+}
+
+.dash-hero .onboard .header .logo img{
+  height: 55px;
+}
+
+.dash-hero .onboard .header .logo span{
+  font-size: 20px;
+    color: white;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+.dash-hero .onboard .header .nav-steps {
+  display: flex;
+  width: calc(100% - 280px);
+  justify-content: center;
+  color: white;
+}
+
+.dash-hero .onboard .header .nav-steps .deets{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.onboard .header .nav-steps .deets .icon {
+  width: 18px;
+  height: 18px;
+  border: 2px solid;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.onboard .header .nav-steps .deets .icon.full {
+  background: #fff;
+}
+
+.onboard .header .nav-steps .arrow {
+  margin: 0 0 0 10px;
+}
+
+.onboard .title {
+  padding: 35px 75px 10px;
+  font-size: 28px;
+  font-family: 'Inter', sans-serif;
+}
+
+.onboard hr {
+  width: calc(100% - 150px);
+  margin: 10px auto;
+}
+
+.onboard .payment.hide,
+.onboard .session.hide,
+.onboard .students.hide,
+.onboard .details.hide {
+  display: none;
+}
+
+.onboard .students,
+.onboard .details {
+  width: calc(100% - 160px);
+    margin: 30px auto;
+    padding: 30px 50px;
+    background: rgba(41, 157, 225, 0.06);
+    border: 1px solid rgba(165, 165, 165, 1);
+    border-radius: 5px;
+}
+
+.onboard .submit-links {
+  display: flex;
+  margin: 30px 0 20px;
+  justify-content: center;
+}
+
+.onboard .submit-links {
+  display: flex;
+  margin: 40px 0 20px;
+  justify-content: center;
+}
+
+.onboard .submit-links .preview {
+  background: #134867;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 25px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.onboard .submit-links .btn,
+.onboard .submit-links .next {
+  background: #2DB417;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 25px;
+  width: 197px;
+  text-align: center;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.onboard .payment {
+  width: calc(100% - 160px);
+    margin: 30px auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.onboard .payment .form-add {
+  width: 55%;
+  padding: 30px 50px;
+    background: rgba(41, 157, 225, 0.06);
+    border: 1px solid rgba(165, 165, 165, 1);
+    border-radius: 5px;
+}
+
+.onboard .payment .fee-view {
+  width: 40%;
+  padding: 30px 50px;
+    border: 1px solid rgba(165, 165, 165, 1);
+    border-radius: 5px;
+}
+
+.onboard .submit-links .back {
+  background: #134867;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 25px;
+  margin: 0 15px;
+  width: 197px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.onboard .payment .submit-links {
+  margin: 50px 0 20px;
+}
+
+.onboard .payment .fee-view .header {
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: #A1A1A1;
+  margin-bottom: 10px;
+}
+
+.onboard .payment .fee-view .header .price {
+  width: 40%;
+}
+
+.onboard .payment .fee-list {
+  display: flex;
+  height: 35px;
+  align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.onboard .payment .fee-list:nth-child(even) {
+  background-color: #EAF1F5;
+}
+
+.onboard .payment .fee-list svg{
+  font-size: 19px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: all ease 0.3s;
+  }
+  
+  .onboard .payment .fee-list svg:hover{
+  fill: red;
+    opacity: 1;
+}
+
+.onboard .payment .fee-list .name{
+  margin: 0 10px;
+  width: 50%;
+}
+
+.onboard .payment .fee-list.total .name {
+  margin: 0 10px 0px 30px;
+}
+
+.onboard .payment .fee-list.total {
+  margin-bottom: 30px;
+}
+
+.onboard .payment .fee-view .submit-links {
+  justify-content: right;
+  margin: 80px 0 20px;
+}
+
+.onboard .session {
+  width: calc(100% - 160px);
+    margin: 30px auto;
+}
+
+.onboard .session select {
+  width: 300px
+}
+
+.onboard .session .session-date {
+  display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.onboard .session .session-date .term {
+  width: calc(33.3% - 30px);
+}
+
+.onboard .session .submit-links {
+  margin: 70px 0 20px;
+}
+
+.school-dash .header {
+  display: flex;
+  background: #134867;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.school-dash .header .logo{
+  height: 65px;
+  display: flex;
+    align-items: center;
+}
+
+.school-dash .header .logo img{
+  height: 55px;
+}
+
+.school-dash .header .nav-link {
+  display: flex;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.school-dash .header .nav-item {
+  margin: 0 30px;
+  cursor: pointer;
+}
+.school-dash .suc-head {
+  padding: 0 75px;
+}
+
+.school-dash .action-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 75px;
+  align-items: center;
+}
+
+.school-dash .action-header .up{
+  display: flex;
+  align-items: center;
+}
+
+.school-dash .action-header .up .btn{
+  padding: 10px 15px;
+  width: 200px;
+  text-align: center;
+  background: #134867;
+  color: white;
+  font-size: 14px;
+  margin-right: 25px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.school-dash .action-header .up svg.delete.hide,
+.school-dash .action-header .up input.hide,
+.school-dash .action-header .up select.hide,
+.school-dash .action-header .up .btn.hide {
+  display: none;
+}
+
+.school-dash .action-header .up input,
+.school-dash .action-header .up select {
+  margin-right: 25px;
+}
+
+.school-dash .action-header .up svg {
+  fill: #134867;
+  font-size: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.school-dash .action-header .up svg.delete {
+  fill: red;
+  margin-left: 20px;
+}
+
+.school-dash .action-header .down {
+  display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    align-items: center;
+}
+
+.school-dash .action-header .down .icon {
+  width: 30px;
+  height: 30px;
+  background: #134867;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+}
+
+.school-dash .filter-header {
+  background: #474747;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 75px;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.school-dash .filter-header .up {
+  max-width: calc(100% - 200px);
+  overflow: scroll;
+  display: flex;
+}
+
+.school-dash .list-body::-webkit-scrollbar,
+.school-dash .filter-header .up::-webkit-scrollbar {
+  display: none;
+}
+
+.school-dash .filter-header .up .tag {
+  background: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.school-dash .filter-header .up .tag .delete {
+  display: inline;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.school-dash .filter-header .up .tag .delete svg {
+  font-size: 15px;
+    fill: red;
+    position: relative;
+    top: -2px;
+}
+
+.school-dash .filter-header .down {
+  color: white;
+}
+
+.school-dash .list-body {
+  margin: 0 75px;
+  overflow: scroll;
+  font-family: 'Inter', sans-serif;
+}
+
+.school-dash .list-body .list-header{
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  height: 40px;
+  align-items: center;
+  background: #F1F1F1;
+  border-top: none;
+  border-left: 1px solid #474747;
+  border-right: 1px solid #474747;
+  border-bottom: 1px solid #474747;
+  padding-left: 20px;
+}
+
+.school-dash .list-body .list-item {
+  width: 400px;
+}
+
+.school-dash .list-body .list-student {
+  display: flex;
+    font-family: 'Inter', sans-serif;
+    height: 40px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.school-dash .list-body .list-student:nth-child(odd) {
+  background: #F1F1F1;
+}
+
+.student-dash .header {
+  display: flex;
+  background: #134867;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.student-dash .header .logo{
+  height: 65px;
+  display: flex;
+    align-items: center;
+}
+
+.student-dash .header .logo img{
+  height: 55px;
+}
+
+.student-dash .header .nav-link {
+  display: flex;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.student-dash .header .nav-item {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.student-dash .student-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 75px 10px;
+  align-items: center;
+}
+
+.student-dash .student-info .up {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.student-dash hr {
+  margin: 10px 75px;
+}
+
+.student-dash .home .pay-block {
+  margin: 20px 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-dash .home .pay-block .pay-history,
+.student-dash .home .pay-block .pay-status{
+  background: #134867;
+  width: calc(50% - 30px);
+  color: white;
+  padding: 30px 50px;
+}
+
+.student-dash .home .pay-block .pay-status .info {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.student-dash .home .pay-block .pay-status .info span {
+  color: #6CFC3A;
+}
+
+.student-dash .home .pay-block .pay-status .info span.err {
+  color: red;
+}
+
+.student-dash .home .pay-block .pay-status .sub-info {
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  margin: 15px 0;
+}
+
+.student-dash .home .pay-block .pay-status .now {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.student-dash .home .pay-block .pay-status .btn {
+  background: white;
+    border-radius: 20px;
+    padding: 7px 25px;
+    cursor: pointer;
+}
+
+.student-dash .home .pay-block .pay-history .amount {
+  font-size: 55px;
+}
+
+.student-dash .home .pay-header {
+  margin: 30px 75px;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-dash .home .pay-header .up {
+  font-size: 25px;
+    font-weight: 500;
+}
+
+.student-dash .home .pay-header .down {
+  font-size: 22px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.student-dash .home .pay-show {
+  margin: 20px 75px;
+  display: flex;
+}
+
+.student-dash .home .pay-show .info {
+  width: 360px;
+  border: 1px solid #ABA6A6;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.student-dash .home .pay-show .info .header {
+  background: no-repeat;
+  color: #A1A1A1;
+  padding: 0;
+}
+
+.student-dash .home .pay-show .info .header .price {
+  width: 30%;
+}
+
+.student-dash .home .pay-show .info .fee-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.student-dash .home .pay-show .info .fee-list:nth-child(even) {
+  background: #EAF1F5;
+}
+
+.student-dash .home .pay-show .info .fee-list .price {
+  width: 30%;
+}
+
+.student-dash .home .pay-show .info .session {
+  margin-top: 20px;
+  color: #A7A7A7;
+  font-size: 14px;
+}
+
+.student-dash .home .pay-show .exps {
+  margin: 0 33px;
+  font-size: 21px;
+}
+
+.student-dash .home .auto-pay {
+  padding: 40px 75px;
+  background: #134867;
+  margin-top: 50px;
+  color: white;
+}
+
+.student-dash .home .auto-pay .title {
+  font-size: 30px;
+}
+
+.student-dash .home .auto-pay .title span {
+  font-size: 15px;
+}
+
+.student-dash .home.hide,
+.student-dash .pay-method.hide,
+.student-dash .pay-plan.hide {
+  display: none;
+}
+
+.student-dash .pay-plan {
+  font-size: 15px;
+}
+
+.student-dash .pay-plan .header {
+  background: none;
+  padding: 0 100px;
+  font-family: 'Inter', sans-serif;
+}
+
+.student-dash .pay-plan .header .item {
+  background: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+}
+
+.student-dash .pay-plan .header .price {
+  width: 35%;
+  font-size: 20px;
+}
+
+.student-dash .pay-plan .fee-list {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin: 15px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.student-dash .pay-plan .fee-list .choose{
+  width: 30px;
+    height: 30px;
+    margin: 0 50px 0 20px;
+}
+
+.student-dash .pay-plan .fee-list .choose .input {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.student-dash .pay-plan .fee-list .name {
+  font-size: 18px;
+  width: calc(55% - 10px);
+  padding: 8px 30px;
+  background: #EAF1F5;
+}
+
+.student-dash .pay-plan .fee-list.total {
+  margin-top: 50px;
+}
+
+.student-dash .pay-plan .fee-list.total .name {
+  background: none;
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 100px;
+}
+
+.student-dash .pay-plan .fee-list.total .price {
+  background: none;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.student-dash .pay-plan .fee-list .price {
+  padding: 9px 0 10px;
+    width: calc(40% - 25px);
+    background: #EAF1F5;
+}
+
+.student-dash .pay-method .submit-links,
+.student-dash .pay-plan .submit-links {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.student-dash .pay-method .submit-links .submit,
+.student-dash .pay-plan .submit-links .next {
+  padding: 10px 60px;
+  background: #2DB417;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.student-dash .pay-method {
+  margin: 45px 145px;
+}
+
+.student-dash .pay-method .img {
+  margin: 35px;
+  display: flex;
+}
+
+.student-dash .pay-method .img img {
+  width: 400px;
+    margin: auto;
+}
+
+.student-dash .pay-method .img img {
+  width: 400px;
+    margin: auto;
+}
+
+.school-landing .header {
+  display: flex;
+  padding: 0 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.school-landing .header .logo{
+  height: 65px;
+  display: flex;
+    align-items: center;
+}
+
+.school-landing .header .logo img{
+  height: 55px;
+}
+
+.school-landing .header .nav-link {
+  display: flex;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.school-landing .header .nav-item {
+  margin: 0 30px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.school-landing .hero {
+  min-height: 100vh;
+  background: url('https://i.imgur.com/3iVcpNK.png')
+    no-repeat center;
+  background-size: cover;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+}
+
+.school-landing .hero .content {
+  width: 60%;
+  padding: 0 75px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.school-landing .hero .content h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 75px;
+}
+
+.school-landing .hero .content p {
+  margin: 20px 0;
+  width: 80%;
+}
+
+.school-landing .hero .content .btn {
+  margin-top: 40px;
+  background: red;
+  padding: 10px 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.school-landing .about {
+  margin: 75px;
+    padding: 60px;
+    background: red;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.school-landing .about h1 {
+  text-align: center;
+    margin-bottom: 25px;
+}
+
+.school-landing .footer {
+  background: #2E2E2E;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.school-landing .footer .info {
+  width: calc(33% - 20px);
+}
+
+.school-landing .footer .info.head {
+  width: calc(44% - 20px);
+  margin-right: 50px;
+}
+
+.school-landing .footer .info img {
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.school-landing .footer .info h3 {
+  margin-bottom: 60px;
+}
+
+.school-landing .footer .info a {
+  color: white;
+  margin-right: 15px;
+}
+
+.school-auth {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-auth .content {
+  z-index: 1;
+  width: 700px;
+  text-align: center;
+  background: red;
+  border-radius: 30px;
+  padding: 40px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.school-auth .content img {
+  width: 75px;
+}
+
+.school-auth .content img {
+  width: 75px;
+}
+
+.school-auth .content h1 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  margin: 30px 0;
+  color: white;
+}
+
+.school-auth .content h1 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  margin: 30px 0;
+  color: white;
+}
+
+.school-auth .content form {
+  width: 400px;
+}
+
+.school-auth .content form .links {
+  margin-top: 40px;
+}
+
+.school-auth .content form .links .btn {
+  background: white;
+    width: 100%;
+    color: red;
+    padding: 10px;
+}
+
+.school-auth .background {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    opacity: 0.3;
+}
+
+
+.btn_text {
+  transition: all 0.2s;
+}
+
+.btn-load {
+  position: relative;
+}
+
+.btn-load .btn_text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn-load::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+.subscribe .btn-load::after {
+  border-top-color: #000000;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
